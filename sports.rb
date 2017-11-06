@@ -13,4 +13,9 @@ class Sports
   def players
     return @players
   end
+
+  def coach
+    return @coach
+  end
+
 end
