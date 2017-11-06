@@ -31,4 +31,10 @@ class TestSports < MiniTest::Test
     assert_equal(["Bob", "Annie", "Caleb", "Florence", "Paulo"], result)
   end
 
+  def test_player_check
+    sports_team = Sports.new("Winners", ["Bob", "Annie", "Caleb", "Florence"], "Big Bill")
+    result = sports_team.player_check("Annie")
+    assert_equal(true, result)
+  end
+
 end
