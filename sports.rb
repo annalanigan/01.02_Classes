@@ -18,9 +18,13 @@ class Sports
   # def coach
   #   return @coach
   # end
-  # 
+  #
   # def set_coach(new_coach)
   #   @coach = new_coach
   # end
+
+  def new_player(name)
+    @players << name
+  end
 
 end
