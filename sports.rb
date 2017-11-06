@@ -5,6 +5,7 @@ class Sports
     @name = name
     @players = players
     @coach = coach
+    @points = 0
   end
 
   # def name
@@ -29,6 +30,11 @@ class Sports
 
   def player_check(name)
     @players.include?(name)
+  end
+
+  def points_for_win(outcome)
+    @points += 1 if outcome == "win"
+    return @points
   end
 
 end
