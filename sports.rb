@@ -1,4 +1,4 @@
-class Sports
+class SportsTeam
   attr_accessor :name, :players, :coach
 
   def initialize(name, players, coach)
