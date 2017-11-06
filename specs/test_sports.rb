@@ -6,7 +6,7 @@ class TestSports < MiniTest::Test
 
   def test_team_name
     sports_team = Sports.new("Winners", ["Bob", "Annie", "Caleb", "Florence"], "Big Bill")
-    assert_equal("Winners", sports_team.team_name)
+    assert_equal("Winners", sports_team.name)
   end
 
   def test_players
@@ -21,8 +21,8 @@ class TestSports < MiniTest::Test
 
   def test_set_coach
     sports_team = Sports.new("Winners", ["Bob", "Annie", "Caleb", "Florence"], "Big Bill")
-    result = sports_team.set_coach("Bigger Barbara")
-    assert_equal("Bigger Barbara", result)
+    sports_team.coach = "Bigger Barbara"
+    assert_equal("Bigger Barbara", sports_team.coach)
   end
 
 end
