@@ -9,11 +9,13 @@ class Library
     @books
   end
 
-  # def book_by_title(title)
-  #   if @books[:title] = title
-  #     return @books[:rental_details]
-  #   end
-  # end
+  def book_by_title(title)
+    for book in @books
+      return book[:rental_details] if book[:title] == title
+    end
+  end
+
+
 
 
 end

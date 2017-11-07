@@ -39,12 +39,12 @@ class TestLibrary < MiniTest::Test
     assert_equal(3, result.count)
   end
 
-  # def test_book_by_title
-  #   result = book_by_title("Oi, Frog")
-  #   assert_equal(rental_details: {
-  #   student_name: "Dylan",
-  #   date: "30/11/17"
-  # }, result)
-  # end
+  def test_book_by_title
+    result = @library.book_by_title("Oi, Frog")
+    assert_equal({student_name: "Dylan",
+    date: "30/11/17"}, result)
+  end
+
+
 
 end
